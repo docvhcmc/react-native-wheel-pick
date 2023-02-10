@@ -50,7 +50,7 @@ public class ReactWheelCurvedPickerManager extends SimpleViewManager<ReactWheelC
         picker.setCurved(false);
         picker.setVisibleItemCount(7);
 
-        picker.setItemAlign(0);
+        picker.setItemAlign(1);
 
         // Trick Code - wake setSelectItemPosition
         picker.setSelectedItemPosition(1); // Cannot 0 instead of 1, I Don Know why but need this line for make ReactProp selectIndex Work
