@@ -25,7 +25,7 @@ public class ReactWheelCurvedPickerManager extends SimpleViewManager<ReactWheelC
     private static final String REACT_CLASS = "WheelCurvedPicker";
 
     private static final int DEFAULT_TEXT_SIZE = 24 * 2;
-    private static final int DEFAULT_ITEM_SPACE = 16 * 2;
+    private static final int DEFAULT_ITEM_SPACE = 20 * 2;
 
     @Override
     public Map getExportedCustomDirectEventTypeConstants() {
@@ -47,7 +47,7 @@ public class ReactWheelCurvedPickerManager extends SimpleViewManager<ReactWheelC
         picker.setCurtain(true);
         picker.setCurtainColor(Color.parseColor("#1A808080"));
         picker.setAtmospheric(true);
-        picker.setCurved(true);
+        picker.setCurved(false);
         picker.setVisibleItemCount(7);
 
         picker.setItemAlign(0);
