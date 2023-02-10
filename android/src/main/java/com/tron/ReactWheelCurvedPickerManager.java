@@ -89,6 +89,13 @@ public class ReactWheelCurvedPickerManager extends SimpleViewManager<ReactWheelC
         }
     }
 
+    @ReactProp(name="itemAlign")
+    public void setItemAlign(ReactWheelCurvedPicker picker, int align) {
+        if (picker != null) {
+            picker.setItemAlign(index);
+        }
+    }
+
     // @ReactProp(name="atmospheric")
     // public void setAtmospheric(ReactWheelCurvedPicker picker, boolean hasAtmospheric) {
     //     if (picker != null) {
@@ -96,12 +103,12 @@ public class ReactWheelCurvedPickerManager extends SimpleViewManager<ReactWheelC
     //     }
     // }
 
-    // @ReactProp(name="curved")
-    // public void setCurved(ReactWheelCurvedPicker picker, boolean hasCurved) {
-    //     if (picker != null) {
-    //         picker.setCurved(hasCurved);
-    //     }
-    // }
+    @ReactProp(name="curved")
+    public void setCurved(ReactWheelCurvedPicker picker, boolean hasCurved) {
+        if (picker != null) {
+            picker.setCurved(hasCurved);
+        }
+    }
 
     // @ReactProp(name="visibleItemCount")
     // public void setVisibleItemCount(ReactWheelCurvedPicker picker, int num) {
